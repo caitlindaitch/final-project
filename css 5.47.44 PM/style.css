@@ -1,0 +1,258 @@
+/* Style.css */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 16px;
+}
+
+.stroke {
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 50px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+.hero {
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+  background: url(../images/art-main.png) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
+}
+
+.navigation {
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.grey-background {
+  background-color: #999;
+  overflow: hidden;
+  width: 100%
+}
+
+.navigation ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.navigation a:link, .navigation a:active, .navigation a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 20px;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.logo {
+  max-width: 100px;
+  float: left;
+  padding: 20px;
+}
+
+.header {
+  padding-top: 300px;
+  color: #fff;
+}
+
+.cta a:link, .cta a:active, .cta a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 50px;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 150px;
+  display: inline-block
+}
+
+.content {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.description {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  overflow: hidden;
+  font-family: arial;
+}
+
+.question {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+  clear: both;
+}
+
+.self {
+  float: left;
+  display: block;
+  max-height: 200px;
+  margin-right: 25px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.shop {
+  margin: 0 auto;
+  width: 70%;
+  clear: both;
+  overflow: hidden;
+}
+
+.art {
+  float: left;
+  max-width: 300px;
+  padding: 30px;
+}
+
+.greyscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); filter: grayscale(100%);
+}
+
+.see-all-art {
+  float: right;
+  color: #fff;
+  padding-right: 200px;
+}
+
+.see-all-art a:link, .see-all-art a:visited, .see-all-art a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta-second a:link, .cta-second a:active, .cta-second a:visited {
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.footer-logo {
+  max-width: 50px;
+  float: left;
+}
+
+.footer-return {
+  max-width: 40px;
+  float: right;
+}
+
+/* here is where the about me page starts */
+
+.about-me {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.about-image {
+  border-radius: 50%;
+  max-width: 300px;
+  float: left;
+  display: block;
+  margin-right: 25px;
+}
+
+.personal-website-cta {
+  clear: both;
+  margin: 0 auto;
+  width: 40%;
+  padding: 75px;
+}
+
+.personal-website-cta a:link, .personal-website-cta a:active, .personal-website-cta a:visited {
+  color: #999;
+  font-size: 50px;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* individual detail page */
+
+.primary-image-content {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.primary-image {
+  max-width: 400px;
+}
+
+.top-line {
+  border-top: 2px solid #999;
+  margin-top: 100px;
+}
+
+.buy-now {
+  float: right;
+  color: #000;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.buy-now a:link, .buy-now a:visited, .buy-now a:active {
+  font-size: 20px;
+  border: 2px solid #000;
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+}
