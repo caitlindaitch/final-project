@@ -18,6 +18,7 @@ body {
   border: 3px solid #fff;
   background: rgba(0, 0, 0, 0.75);
   padding: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -108,12 +109,12 @@ a:hover {
 }
 
 .content {
-  background-color: #000;
+  background-color: #fff;
   overflow: hidden;
 }
 
 .description {
-  color: #fff;
+  color: #666;
   font-size: 20px;
   padding-left: 100px;
   padding-right: 100px;
@@ -126,7 +127,7 @@ a:hover {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #3D3D3D;
   font-size: 30px;
   clear: both;
 }
@@ -160,18 +161,19 @@ a:hover {
 
 .see-all-art {
   float: right;
-  color: #fff;
+  color: #000;
   padding-right: 200px;
+  margin-bottom: 20px;
 }
 
 .see-all-art a:link, .see-all-art a:visited, .see-all-art a:active {
-  color: #fff;
+  color: #999;
   text-decoration: none;
 }
 
 .cta-second a:link, .cta-second a:active, .cta-second a:visited {
   font-size: 20px;
-  border: 2px solid white;
+  border: 2px solid #999;
   padding: 10px;
 }
 
@@ -179,6 +181,7 @@ a:hover {
   width: 100%;
   padding: 10px;
   overflow: hidden;
+  background-color: #666;
 }
 
 .footer-logo {
@@ -255,4 +258,101 @@ a:hover {
   color: #000;
   padding: 10px;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .navigation a:link, .navigation a:active, .navigation a:visited {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .cta a:link, .cta a:active, .cta a:visited {
+    font-size: 20px;
+    margin: 100px;
+  }
+
+  .question {
+    padding: 20px;
+    float: none;
+    text-align: center;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .self {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .shop {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .art {
+    float: none;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .see-all-art {
+    float: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 250px;
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+
+  .personal-website-cta {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .personal-website-cta a:link, .personal-website-cta a:active, .personal-website-cta a:visited {
+    font-size: 20px;
+  }
+
+  .about-me {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .primary-image-content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .primary-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .buy-now {
+    float: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
 }
