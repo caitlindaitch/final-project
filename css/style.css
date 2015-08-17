@@ -22,7 +22,9 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 50px;
+  font-family: "lobster", cursive;
+  font-weight: bold;
 }
 
 .bold {
@@ -93,7 +95,7 @@ a:hover {
 }
 
 .header {
-  padding-top: 300px;
+  padding-top: 250px;
   color: #fff;
 }
 
