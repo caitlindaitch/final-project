@@ -17,13 +17,13 @@ body {
 .stroke {
   border: 3px solid #fff;
   background: rgba(0, 0, 0, 0.75);
-  padding: 50px;
+  padding: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-  font-size: 50px;
-  font-family: "lobster", cursive;
+  font-size:50px;
+  font-family: helvetica;
   font-weight: bold;
 }
 
@@ -106,7 +106,7 @@ a:hover {
   font-size: 50px;
   border: 2px solid white;
   padding: 10px;
-  margin: 150px;
+  margin: 50px;
   display: inline-block
 }
 
