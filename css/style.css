@@ -42,7 +42,6 @@ h1 {
 #container {
   width: 100%;
   margin: auto;
-  height: 500px;
 }
 
 .hero {
@@ -57,7 +56,7 @@ h1 {
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
-.navigation {
+nav {
   float: right;
   padding-top: 20px;
   padding-right: 20px;
@@ -69,12 +68,12 @@ h1 {
   width: 100%
 }
 
-.navigation ul li {
+nav ul li {
   display: inline;
   list-style-type: none;
 }
 
-.navigation a:link, .navigation a:active, .navigation a:visited {
+nav a {
   color: #fff;
   text-decoration: none;
   font-family: helvetica;
@@ -110,7 +109,7 @@ a:hover {
   display: inline-block
 }
 
-.content {
+#content {
   background-color: #fff;
   overflow: hidden;
 }
@@ -131,7 +130,6 @@ a:hover {
   padding-bottom: 20px;
   color: #3D3D3D;
   font-size: 30px;
-  clear: both;
 }
 
 .self {
@@ -268,7 +266,7 @@ a:hover {
     font-size: 23px;
   }
 
-  .navigation a:link, .navigation a:active, .navigation a:visited {
+  nav a {
     font-size: 18px;
     margin: 10px;
   }
