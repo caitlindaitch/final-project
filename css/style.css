@@ -10,7 +10,8 @@
 }
 
 body {
-  font-family: helvetica;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -22,13 +23,32 @@ body {
 }
 
 h1 {
-  font-size:50px;
-  font-family: helvetica;
-  font-weight: bold;
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.center {
+  text-align: center;
 }
 
 .align-left {
@@ -48,7 +68,7 @@ h1 {
   text-align: center;
   background-size: cover;
   height: 100vh;
-  background: url(../images/art-main.png) no-repeat center top;
+  background: url(../images/art-main-final.png) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -76,7 +96,8 @@ nav ul li {
 nav a {
   color: #fff;
   text-decoration: none;
-  font-family: helvetica;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   border: 2px solid white;
   padding: 10px;
@@ -101,12 +122,21 @@ a:hover {
 .cta a:link, .cta a:active, .cta a:visited {
   color: #fff;
   text-decoration: none;
-  font-family: helvetica;
-  font-size: 50px;
+  font-family: 'oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
   border: 2px solid white;
   padding: 10px;
-  margin: 50px;
-  display: inline-block
+  position: absolute;
+  bottom: 20%;
+  left: 42%;
+  display: inline-block;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
 }
 
 #content {
@@ -120,7 +150,8 @@ a:hover {
   padding-left: 100px;
   padding-right: 100px;
   overflow: hidden;
-  font-family: arial;
+  font-family: 'oswald', sans-serif;
+  font-weight: 300;
   padding-bottom: 25px;
 }
 
@@ -128,9 +159,21 @@ a:hover {
   padding-top: 75px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #3D3D3D;
   font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.subhead {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-size: 20px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
 }
 
 .self {
@@ -183,6 +226,7 @@ a:hover {
   padding: 10px;
   overflow: hidden;
   background-color: #999;
+  bottom: 0;
 }
 
 .footer-logo {
@@ -195,13 +239,13 @@ a:hover {
   float: right;
 }
 
-/* here is where the about me page starts */
+/* about me page */
 
 .about-me {
   margin: 0 auto;
   width: 70%;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   overflow: hidden;
 }
 
@@ -217,16 +261,25 @@ a:hover {
   clear: both;
   margin: 0 auto;
   width: 40%;
-  padding: 75px;
+  padding: 25px;
 }
 
 .personal-website-cta a:link, .personal-website-cta a:active, .personal-website-cta a:visited {
   color: #999;
-  font-size: 50px;
+  font-size: 30px;
   border: 2px solid #999;
+  font-family: 'roboto', sans-serif;
+  font-weight: 600;
   border-radius: 10px;
   padding: 10px;
   text-decoration: none;
+}
+
+.about-subhead {
+  font-style: italic;
+  font-size: 20px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
 }
 
 /* individual detail page */
@@ -251,6 +304,7 @@ a:hover {
   color: #000;
   margin-top: 30px;
   margin-right: 30px;
+  font-weight: 400;
 }
 
 .buy-now a:link, .buy-now a:visited, .buy-now a:active {
@@ -262,7 +316,8 @@ a:hover {
 }
 
 .overlay-background {
-  position: absolute;
+  position: fixed;
+  display: none;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -295,7 +350,8 @@ a:hover {
 }
 
 input[type=text] {
-  font-family: arial;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   border: 2px solid #999;
   border-radius: 5px;
   padding: 10px;
@@ -305,7 +361,8 @@ input[type=text] {
 }
 
 input[type=submit] {
-  font-family: arial;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   padding: 10px;
   background-color: #666;
   border-color: #999;
@@ -321,7 +378,7 @@ input[type=submit] {
 @media only screen and (max-width: 768px) {
 
   h1 {
-    font-size: 23px;
+    font-size: 28px;
   }
 
   nav a {
@@ -331,7 +388,14 @@ input[type=submit] {
 
   .cta a:link, .cta a:active, .cta a:visited {
     font-size: 20px;
-    margin: 100px;
+    left: 35%;
+    bottom: 25%;
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
   }
 
   .question {
@@ -375,7 +439,7 @@ input[type=submit] {
     max-width: 250px;
     float: none;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
 
   .personal-website-cta {
@@ -391,7 +455,7 @@ input[type=submit] {
 
   .about-me {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .primary-image-content {
@@ -426,12 +490,10 @@ input[type=submit] {
   }
 
   input[type=text] {
-    font-family: arial;
     max-height: 35px;
   }
 
   input[type=submit] {
-    font-family: arial;
     padding: 5px;
   }
 

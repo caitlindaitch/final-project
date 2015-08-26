@@ -14,7 +14,7 @@
   <body>
     <div id="container">
       <div class="grey-background">
-        <a name="top"></a>
+        <div class="top"></div>
         <a href="../index.html"><img src="../images/personal-logo-transparent.png" class="logo"></a>
         <nav>
           <ul>
@@ -26,20 +26,43 @@
 
       <div class="primary-image-content">
         <img src="../images/owl-zentangle-1.jpg" class="primary-image greyscale">
-        <h2>Owl Zentangle</h2>
+        <h3>Owl Zentangle</h3>
         <p>This is a custom piece of art. You will be receiving a mailed copy of the original artwork with signature, not a printed copy.</p>
         <p>Cost: $_____</p>
         <p>Please contact me for details if you are interested.</p>
         <div class="buy-now">
-          <a href="mailto:caitlin.daitch@gmail.com">Buy Now</a>
+          <a href="#">Request Custom Art</a>
         </div>
       </div>
 
+      <div class="popup">
+        <a href="#"><img src="../images/close_icon.png" class="close-icon"></a>
+        <form id="custom-request" action="mailto:caitlin.daitch@gmail.com" enctype="text/plain">
+          <label>
+            <input type="text" placeholder="Name" />
+          </label><br>
+          <label>
+            <input type="text" placeholder="Email" />
+          </label><br>
+          <label>
+            <input type="text" placeholder="Favorite Artwork Examples" />
+          </label><br>
+          <label>
+            <input type="text" placeholder="Description" class="description-input"/>
+          </label><br>
+          <label>
+            <input type="submit" value="Submit" />
+          </label>
+        </form>
+      </div>
+
+      <div class="overlay-background"></div>
+
       <div class="shop top-line">
-        <h2>You may also like:</h2>
-        <a href="#"><img src="http://placehold.it/300x300" class="art"></a>
-        <a href="#"><img src="http://placehold.it/300x300" class="art"></a>
-        <a href="#"><img src="http://placehold.it/300x300" class="art"></a>
+        <h3>You may also like:</h3>
+        <a href="elephant-zentangle-1.html"><img src="../images/elephant-zentangle-1.png" class="art greyscale"></a>
+        <a href="giraffe-zentangle-1.html"><img src="../images/giraffe-zentangle-1.jpg" class="art greyscale"></a>
+        <a href="fish-zentangle-1.html"><img src="../images/fish-zentangle-1.jpg" class="art greyscale"></a>
       </div>
 
       <div class="footer grey-background">
@@ -47,5 +70,10 @@
         <a href="#top"><img src="../images/return-to-top.png" class="footer-return"></a>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script src="../js/index.js"></script>
+
   </body>
 </html>

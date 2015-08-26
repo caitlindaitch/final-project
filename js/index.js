@@ -1,25 +1,42 @@
 $(document).ready(function() {
 
   $('.scroll-down').click(function(){
-      $('html, body').animate({
-          scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 1200);
-      return false;
+      $('#content').velocity('scroll', { duration: 1200 });
+  });
+
+  $('.footer-return').click(function(){
+    $('.top').velocity('scroll', { duration: 1200 });
   });
 
   function showPopup() {
-    $(".popup").fadeIn();
+    $(".popup").velocity({
+      opacity: [1, 0]
+    }, {
+      display: 'block'
+    });
 
-    $("body").addClass("overlay-background");
+    $(".overlay-background").velocity({
+      opacity: [1, 0]
+    }, {
+      display: 'block'
+    });
   }
 
   function hidePopup () {
-    $(".popup").fadeOut();
+    $(".popup").velocity({
+      opacity: [0, 1]
+    }, {
+      display: 'none'
+    });
 
-    $("body").removeClass("overlay-background")
+    $(".overlay-background").velocity({
+      opacity: [0, 1]
+    }, {
+      display: 'none'
+    });
   }
 
   $(".buy-now").click(showPopup);
-  $(".close-icon").click(hidePopup);
+  $(".close-icon, .overlay-background").click(hidePopup);
 
 });
