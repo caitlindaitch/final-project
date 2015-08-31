@@ -15,24 +15,17 @@ body {
   font-size: 16px;
 }
 
-.stroke {
-  border: 3px solid #fff;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
 h1 {
   font-size: 60px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
   font-style: italic;
 }
 
 h2 {
   font-size: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -66,8 +59,12 @@ h3 {
 
 .hero {
   text-align: center;
-  background-size: cover;
   height: 100vh;
+}
+
+.hero-background {
+  height: 100vh;
+  background-size: cover;
   background: url(../images/art-main-final.png) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
@@ -77,15 +74,26 @@ h3 {
 }
 
 nav {
+  position: static;
   float: right;
   padding-top: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
-.grey-background {
-  background-color: #999;
+.home-nav {
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+.nav-background {
+  background-color: #C0C0C0;
+  position: static;
+  top:0;
+  left:0;
   overflow: hidden;
-  width: 100%
+  width: 100%;
 }
 
 nav ul li {
@@ -110,12 +118,23 @@ a:hover {
 
 .logo {
   max-width: 100px;
-  float: left;
+  position: absolute;
+  top:0;
+  left:0;
   padding: 20px;
 }
 
+.stroke {
+  border: 3px solid #fff;
+  background: rgba(4,196,187,0.3);
+  padding: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
 .header {
-  padding-top: 250px;
+  position: absolute;
+  top: 35%;
+  left: 30%;
   color: #fff;
 }
 
@@ -174,6 +193,7 @@ a:hover {
   font-size: 20px;
   font-family: 'roboto', sans-serif;
   font-weight: 400;
+  color: #999;
 }
 
 .self {
@@ -217,7 +237,8 @@ a:hover {
 
 .cta-second a:link, .cta-second a:active, .cta-second a:visited {
   font-size: 20px;
-  border: 2px solid #999;
+  border: 2px solid rgb(4,196,187);
+  color: rgb(4,196,187);
   padding: 10px;
 }
 
@@ -225,7 +246,7 @@ a:hover {
   width: 100%;
   padding: 10px;
   overflow: hidden;
-  background-color: #999;
+  background-color: #C0C0C0;
   bottom: 0;
 }
 
@@ -285,7 +306,7 @@ a:hover {
 /* individual detail page */
 
 .primary-image-content {
-  width: 30%;
+  width: 29%;
   margin: 0 auto;
   padding-top: 40px;
 }
@@ -309,8 +330,8 @@ a:hover {
 
 .buy-now a:link, .buy-now a:visited, .buy-now a:active {
   font-size: 20px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid rgb(4,196,187);
+  color: rgb(4,196,187);
   padding: 10px;
   text-decoration: none;
 }
@@ -331,7 +352,7 @@ a:hover {
   position: absolute;
   top: 25%;
   left: 25%;
-  width: 50%;
+  width: 600px;
   height: 50%;
   padding: 16px;
   text-align: center;
@@ -375,6 +396,18 @@ input[type=submit] {
   height: 100px;
 }
 
+.teal {
+  color: rgb(4,196,187);
+}
+
+.navy {
+  color: rgb(8,55,105);
+}
+
+.grey {
+  color: #999;
+}
+
 @media only screen and (max-width: 768px) {
 
   h1 {
@@ -386,6 +419,13 @@ input[type=submit] {
     margin: 10px;
   }
 
+  .header {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    color: #fff;
+  }
+
   .cta a:link, .cta a:active, .cta a:visited {
     font-size: 20px;
     left: 35%;
@@ -395,7 +435,7 @@ input[type=submit] {
   .down-arrow {
     position: absolute;
     bottom: 0;
-    left: 30%;
+    left: 33%;
   }
 
   .question {
@@ -484,7 +524,6 @@ input[type=submit] {
     height: 60%;
     padding: 10px;
     margin: 0 auto;
-    border: 5px solid black;
     text-align: center;
     border-radius: 15px;
   }
