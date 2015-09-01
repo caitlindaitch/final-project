@@ -350,10 +350,10 @@ a:hover {
 .popup {
   display: none;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 18%;
+  left: 28%;
   width: 600px;
-  height: 50%;
+  height: 550px;
   padding: 16px;
   text-align: center;
   border-radius: 15px;

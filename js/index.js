@@ -1,10 +1,12 @@
 $(document).ready(function() {
 
   $('.scroll-down').click(function(){
+      event.preventDefault();
       $('#content').velocity('scroll', { duration: 1200 });
   });
 
   $('.footer-return').click(function(){
+    event.preventDefault();
     $('.top').velocity('scroll', { duration: 1200 });
   });
 
