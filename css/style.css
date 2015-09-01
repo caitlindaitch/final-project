@@ -419,10 +419,6 @@ input[type=submit] {
     margin: 10px;
   }
 
-  .hero-background {
-    background-attachment: default;
-  }
-
   .header {
     position: absolute;
     top: 35%;
