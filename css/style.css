@@ -411,7 +411,7 @@ input[type=submit] {
 @media only screen and (max-width: 768px) {
 
   h1 {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   nav a {
@@ -419,10 +419,21 @@ input[type=submit] {
     margin: 10px;
   }
 
+  .hero-background {
+    height: 100vh;
+    background-size: cover;
+    background: url(../images/art-main-final.png) no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); filter: grayscale(100%);
+  }
+
   .header {
     position: absolute;
     top: 35%;
-    left: 15%;
+    left: 22%;
     color: #fff;
   }
 
