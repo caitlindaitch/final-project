@@ -487,7 +487,7 @@ input[type=submit] {
   }
 
   .about-image {
-    max-width: 250px;
+    width: 100%;
     float: none;
     margin: 0 auto;
     padding-bottom: 15px;
@@ -501,7 +501,7 @@ input[type=submit] {
   }
 
   .personal-website-cta a:link, .personal-website-cta a:active, .personal-website-cta a:visited {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .about-me {
