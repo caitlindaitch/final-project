@@ -9,12 +9,15 @@
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:900italic,700italic,900,700,500italic,500" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <div id="container">
-      <div class="grey-background">
-        <a name="top"></a>
+      <div class="nav-background">
+        <div class="top"></div>
         <a href="../index.html"><img src="../images/personal-logo-transparent.png" class="logo"></a>
         <nav>
           <ul>
@@ -26,7 +29,7 @@
 
       <div class="primary-image-content">
         <img src="../images/giraffe-zentangle-1.jpg" class="primary-image greyscale">
-        <h2>Giraffe Zentangle</h2>
+        <h3>Giraffe Zentangle</h3>
         <p>Want a piece of custom artwork?</p>
         <p>Please contact me with a detailed description of what you would like, and I will give you a cost estimate.</p>
         <p>Consider providing the following information:
@@ -37,15 +40,38 @@
           </ul>
         </p>
         <div class="buy-now">
-          <a href="mailto:caitlin.daitch@gmail.com">Email for Custom Request</a>
+          <a href="#">Request Custom Art</a>
         </div>
       </div>
 
+      <div class="popup">
+        <a href="#"><img src="../images/close_icon.png" class="close-icon"></a>
+        <form id="custom-request" action="mailto:caitlin.daitch@gmail.com" enctype="text/plain">
+          <label>
+            <input type="text" placeholder="Name" />
+          </label><br>
+          <label>
+            <input type="text" placeholder="Email" />
+          </label><br>
+          <label>
+            <input type="text" placeholder="Favorite Artwork Examples" />
+          </label><br>
+          <label>
+            <input type="text" placeholder="Description" class="description-input"/>
+          </label><br>
+          <label>
+            <input type="submit" value="Submit" />
+          </label>
+        </form>
+      </div>
+
+      <div class="overlay-background"></div>
+
       <div class="shop top-line">
-        <h2>You may also like:</h2>
-        <a href="#"><img src="http://placehold.it/300x300" class="art"></a>
-        <a href="#"><img src="http://placehold.it/300x300" class="art"></a>
-        <a href="#"><img src="http://placehold.it/300x300" class="art"></a>
+        <h3>You may also like:</h3>
+        <a href="fish-zentangle-1.html"><img src="../images/fish-zentangle-1.jpg" class="art greyscale"></a>
+        <a href="feather-zentangle-1.html"><img src="../images/feather-zentangle-1.jpg" class="art greyscale"></a>
+        <a href="mandala-zentangle-1.html"><img src="../images/mandala-zentangle-1.jpg" class="art greyscale"></a>
       </div>
 
       <div class="footer grey-background">
@@ -53,5 +79,10 @@
         <a href="#top"><img src="../images/return-to-top.png" class="footer-return"></a>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script src="../js/index.js"></script>
+
   </body>
 </html>
