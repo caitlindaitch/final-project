@@ -1,3 +1,3 @@
-# final-project
+# Caitlin's Zentangles
 
-I have made an edit!
+This is a front-end website created with HTML/CSS and JavaScript as well as jQuery and Velocity libraries.
